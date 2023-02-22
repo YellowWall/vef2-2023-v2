@@ -43,7 +43,7 @@ userRouter.post('/register',async (req,res) => {
     if (!user){
         return res.render('register');
     }
-    return res.redirect('/login');
+    return res.redirect('/');
 })
 
 userRouter.get('/logout', (req,res) =>{
