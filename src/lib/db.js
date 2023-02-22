@@ -47,6 +47,7 @@ export async function query(q, values = []) {
 
 export async function createSchema(schemaFile = SCHEMA_FILE) {
   const data = await readFile(schemaFile);
+  console.log(data.toString());
 
   return query(data.toString('utf-8'));
 }
